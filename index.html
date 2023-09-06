@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TO DO LIST</title>
+    <link rel="stylesheet" href="style.css"> 
+ 
+</head>
+<body>
+<div class="title">
+    <h3 id="heading">TO DO LIST <img src="icon.png"> </h3>
+    <div class="row">
+     <input placeholder=" Enter your task." type="text" id="input-box"
+    onkeydown="if(event.key==='Enter'){addtask()} "> 
+
+     <button  onclick="addtask()" class="herobtn">Add</button>
+     </div>
+     <ul id="list-container">
+      <!--<li class="checked">Task1</li>
+        <li>Task1</li>
+        <li>Task1</li>   --->
+     </ul>
+</div>
+
+<!----
+<div class="Buttons-component">
+  
+    <button   class="btn-style"  onclick="checkuser('alpha')" id="alpha-btn" class="active">Alpha </button>
+    <button  class="btn-style" onclick="checkuser('beta')" id="beta-btn" >Beta</button>
+    <button  class="btn-style"  onclick="checkuser('charlie')" id="charlie-btn">Charlie</button>
+</div>
+
+--->
+
+<div class="controls">
+    <button class="arrow"   onclick="gotoNextLists()"> &#8594; </button>
+</div>
+
+<div class="control2">
+    <button class="arrow" onclick="gotoPreviousLists()">&#8592;</button>
+</div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
